@@ -1,33 +1,23 @@
 let nome
 let xp
 
-xp = 1500
-
-switch (xp) {
-    case xp < 1000:
-        nome = "Ferro"
-        break;
-    case xp >= 1000:case xp <= 2000:
-        nome = "Bronze"
-        break;
-    case xp >= 2001:case xp <= 5000:
-        nome = "Prata"
-        break;
-    case xp >= 5001:case xp <= 7000:
-        nome = "Ouro"
-        break;
-    case xp >= 7001:case xp <= 8000:
-        nome = "Platina"
-        break;
-    case xp >= 8001:case xp <= 9000:
-        nome = "Ascendente"
-        break;
-    case xp >= 9001:case xp <= 10000:
-        nome = "Imortal"
-        break;
-    default:
-        nome = "Radiante"
-        break;
+if(xp < 1000)  {
+    nome = "Ferro"
+}else if (xp >= 1000 && xp <= 2000) {
+    nome = "Bronze"
+}else if (xp >= 2001 && xp <= 5000){
+    nome = "Prata"
+}else if (xp >= 5001 && xp <= 7000){
+    nome = "Ouro"
+}else if (xp >= 7001 && xp <= 8000){
+    nome = "Platina"
+}else if (xp >= 8001 && xp <= 9000){
+    nome = "Ascendente"
+}else if (xp >= 9001 && xp <= 10000){
+    nome = "Imortal"
+}else {
+    // xp > 10001:
+    nome = "Radiante"
 }
 
 console.log(nome)
